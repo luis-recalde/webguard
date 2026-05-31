@@ -11,10 +11,12 @@ Es un skill para Claude Code: se instala una vez y lo usás cuando querés.
 ## Instalación
 
 ```bash
+# Opción 1 — instalar globalmente (recomendado)
 git clone https://github.com/luis-recalde/webguard ~/.claude/skills/webguard
-```
 
-Un solo comando. Sin configuración adicional.
+# Opción 2 — copiar solo al proyecto actual
+cp ~/.claude/skills/webguard/SKILL.md .claude/SKILL.md
+```
 
 ---
 
@@ -40,7 +42,7 @@ WebGuard también se activa automáticamente cuando agregás integraciones nueva
 ## Qué analiza
 
 ### Headers HTTP de seguridad
-Verifica que `next.config.js` tenga configurados los headers que los browsers modernos exigen. Si faltan, WebGuard los agrega con la configuración correcta: `X-Frame-Options`, `Content-Security-Policy`, `X-Content-Type-Options`, `Referrer-Policy` y `Permissions-Policy`.
+Verifica que tu sitio tenga configurados los headers que los browsers modernos exigen. Si faltan, WebGuard los agrega con la configuración correcta: `X-Frame-Options`, `Content-Security-Policy`, `X-Content-Type-Options`, `Referrer-Policy` y `Permissions-Policy`.
 
 ### Secrets hardcodeados
 Escanea el proyecto con más de 60 patrones para detectar API keys, tokens de acceso, contraseñas, claves privadas y credenciales de bases de datos expuestas en el código fuente. Si encuentra algo, bloquea el deploy.
@@ -61,7 +63,7 @@ Revisa que ninguna API key secreta ni token privado quede expuesto en el código
 Verifica que los endpoints de formularios usen HTTPS y que los datos de contacto viajen de forma segura.
 
 ### OWASP Top 10
-Cubre los vectores de ataque relevantes para sitios Next.js: Broken Access Control, Cryptographic Failures, Injection, Security Misconfiguration, Vulnerable Components, Software Integrity Failures y SSRF.
+Cubre los vectores de ataque más comunes en sitios web: Broken Access Control, Cryptographic Failures, Injection, Security Misconfiguration, Vulnerable Components, Software Integrity Failures y SSRF.
 
 ---
 
@@ -77,4 +79,8 @@ Instalás WebGuard, lo ejecutás, y te dice si hay algo que arreglar — en espa
 
 MIT — Copyright Luis Recalde 2026. Ver [LICENSE](LICENSE).
 
-**Autor:** info@luisrecalde.com
+---
+
+## Autor
+
+Luis Recalde — info@luisrecalde.com

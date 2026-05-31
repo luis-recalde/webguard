@@ -11,10 +11,12 @@ It's a skill for Claude Code: install it once, use it whenever you want.
 ## Installation
 
 ```bash
+# Option 1 — install globally (recommended)
 git clone https://github.com/luis-recalde/webguard ~/.claude/skills/webguard
-```
 
-One command. No additional setup.
+# Option 2 — copy to current project only
+cp ~/.claude/skills/webguard/SKILL.md .claude/SKILL.md
+```
 
 ---
 
@@ -40,7 +42,7 @@ WebGuard also activates automatically when you add new integrations (payments, f
 ## What it analyzes
 
 ### HTTP security headers
-Verifies that `next.config.js` includes the headers modern browsers require. If any are missing, WebGuard adds them with the correct configuration: `X-Frame-Options`, `Content-Security-Policy`, `X-Content-Type-Options`, `Referrer-Policy`, and `Permissions-Policy`.
+Verifies that your site includes the security headers modern browsers require. If any are missing, WebGuard adds them with the correct configuration: `X-Frame-Options`, `Content-Security-Policy`, `X-Content-Type-Options`, `Referrer-Policy`, and `Permissions-Policy`.
 
 ### Hardcoded secrets
 Scans the project with over 60 patterns to detect API keys, access tokens, passwords, private keys, and database credentials exposed in source code. If anything is found, the deployment is blocked.
@@ -61,7 +63,7 @@ Checks that no secret API keys or private tokens are exposed in the JavaScript c
 Verifies that form endpoints use HTTPS and that contact data travels securely.
 
 ### OWASP Top 10
-Covers the attack vectors relevant to Next.js sites: Broken Access Control, Cryptographic Failures, Injection, Security Misconfiguration, Vulnerable Components, Software Integrity Failures, and SSRF.
+Covers the most common attack vectors for websites: Broken Access Control, Cryptographic Failures, Injection, Security Misconfiguration, Vulnerable Components, Software Integrity Failures, and SSRF.
 
 ---
 
@@ -77,4 +79,8 @@ Install WebGuard, run it, and it tells you if anything needs fixing — in plain
 
 MIT — Copyright Luis Recalde 2026. See [LICENSE](LICENSE).
 
-**Author:** info@luisrecalde.com
+---
+
+## Author
+
+Luis Recalde — info@luisrecalde.com
