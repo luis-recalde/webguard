@@ -9,7 +9,7 @@ WebGuard analyzes your site before deployment and detects real vulnerabilities: 
 ## Installation
 
 ```bash
-git clone https://github.com/luisrecalde/webguard ~/.claude/skills/webguard
+git clone https://github.com/luis-recalde/webguard ~/.claude/skills/webguard
 ```
 
 One command. No additional setup.
