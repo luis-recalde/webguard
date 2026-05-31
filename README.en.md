@@ -1,8 +1,10 @@
 # WebGuard
 
-Automatic security audit for Next.js websites, integrated directly into Claude Code.
+Check if your website is secure — no technical knowledge required.
 
-WebGuard analyzes your site before deployment and detects real vulnerabilities: secrets exposed in code, misconfigured HTTP headers, dependencies with known flaws, insecure forms, and OWASP Top 10 attack vectors. When done, it delivers a clear report with the specific fixes needed.
+WebGuard reviews your site before you publish it and warns you if anything puts your visitors, your data, or your business at risk. You don't need to know anything about programming or cybersecurity: WebGuard finds the problems and tells you exactly what to fix, in plain language.
+
+It's a skill for Claude Code: install it once, use it whenever you want.
 
 ---
 
@@ -65,14 +67,14 @@ Covers the attack vectors relevant to Next.js sites: Broken Access Control, Cryp
 
 ## Who it's for
 
-WebGuard is designed for website owners and developers who want to publish with the confidence that their site is secure, without needing to be cybersecurity experts.
+For anyone who owns a website and wants to publish it knowing it's safe — no need to understand what an HTTP header is or what OWASP means.
 
-The analysis is automatic. The report is direct. The fixes are concrete.
-
-If something is wrong, WebGuard says so clearly and corrects it before the site goes live.
+Install WebGuard, run it, and it tells you if anything needs fixing — in plain language, with concrete instructions. No unnecessary jargon.
 
 ---
 
 ## License
 
 MIT — Copyright Luis Recalde 2026. See [LICENSE](LICENSE).
+
+**Author:** info@luisrecalde.com
