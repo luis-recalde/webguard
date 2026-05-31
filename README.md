@@ -1,5 +1,9 @@
 # WebGuard
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Stars](https://img.shields.io/github/stars/luis-recalde/webguard?style=social)
+![Forks](https://img.shields.io/github/forks/luis-recalde/webguard?style=social)
+
 Revisá si tu sitio web está seguro — sin necesitar conocimientos técnicos.
 
 WebGuard revisa tu sitio antes de publicarlo y te avisa si hay algo que puede poner en riesgo a tus visitantes, tus datos o tu negocio. No hace falta saber de programación ni de ciberseguridad: WebGuard detecta los problemas y te dice exactamente qué corregir, con palabras claras.

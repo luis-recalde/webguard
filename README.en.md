@@ -1,5 +1,9 @@
 # WebGuard
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Stars](https://img.shields.io/github/stars/luis-recalde/webguard?style=social)
+![Forks](https://img.shields.io/github/forks/luis-recalde/webguard?style=social)
+
 Check if your website is secure — no technical knowledge required.
 
 WebGuard reviews your site before you publish it and warns you if anything puts your visitors, your data, or your business at risk. You don't need to know anything about programming or cybersecurity: WebGuard finds the problems and tells you exactly what to fix, in plain language.
